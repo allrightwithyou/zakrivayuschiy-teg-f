@@ -11,6 +11,126 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--main-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-image);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.header{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--acent-font);
+  margin-top:100px;
+  width: var(--main-width);
+  height: var(--header-height);
+  border: solid 2px;
+  margin-bottom: 100px;
+}
+
+.header__title{
+  font-size:var(--header__title-font-size);
+}
+
+.header__post-title{
+  font-size:var(--header__post-title-font-size);
+}
+
+.main{
+  width: var(--main-width);
+}
+
+.image{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  
+}
+
+.main__content{
+  background-color: #fff;
+  border: solid 2px;
+}
+.main__content-title{
+  font-variation-settings: "wght" var(--main-title-weight);
+  font-size: 18px;
+  padding: 3px 10px;
+}
+
+.main__content-section{
+  padding: 25px;
+  font-size:18px;
+}
+
+.main__content-text{
+  display: flex;
+  flex-direction: column;
+  gap:27px;
+  margin-bottom: 25px;
+}
+
+
+.card__icon-button{
+  border: 2px transparent solid;
+  display: flex;
+  width: 33px;
+  align-self: center;
+}
+
+.card__like-button{
+  font-family: var(--acent-font);
+  width: 130px;
+  height: 38px;
+  display: flex;
+  border: solid 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  gap:7px;
+  justify-self: end;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.block-image{
+  position: relative;
+}
+.label{
+  position:absolute;
+  font-family: var(--acent-font);
+  font-size:14px;
+  right:25px;
+  top:25px;
+  -webkit-text-stroke:1px #fff;
+  mix-blend-mode:hard-light;
+  opacity: 0.5;
+  
+}
+.button__save{
+  background-color: #fff;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: 50px;
+  width: 335px;
+  height: 51px;
+  gap: 8px;
+  font-family:var(--acent-font);
+  font-size:14px;
 }

@@ -1,1 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+--main-font:'Inter-Variable';
+--acent-font:'PressStart2P';
+--main-weight:400;
+--title-weight:700;
+--color-gray:#d3d3d3;
+--color-transparent:transparent;
+--main-width:clamp(375px, 48.3%, 696px);
+--header-height:clamp(327px, 25.83vh, 368px);
+--header__title-font-size:65px;
+--header__post-title-font-size:23px;
+--main-title-weight:700;
+--bg-image: repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+@media (width <= 375px){
+  :root{
+    --main-width:100vw;
+  }
+}
