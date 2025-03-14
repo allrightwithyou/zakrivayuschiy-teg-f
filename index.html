@@ -26,7 +26,7 @@
           </h3>
           <div class="block-image">
             <label class="label">&lt;/HTML&gt;</label>
-           <img src="./images/image.png" class="image" />
+            <img src="./images/image.png" class="image" />
           </div>
           <section class="main__content-section">
             <div class="main__content-text">
@@ -38,24 +38,42 @@
               <p>Место для ваших воспоминаний о начале обучения.</p>
             </div>
             <div class="buttons">
-            <button class="card__icon-button">
-              <img
-                class="like-icon"
-                src="./svg/heart.svg"
-                width="27px"
-                height="24px"
-              />
-            </button>
-            <button class="card__like-button">
-              <span class="button__text"> Like </span>
-            </button>
+              <button class="card__icon-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="40" height="36" >
+                   <g class="heart">
+                    <path class="contour" fill="var(--color-acent)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="none" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                   </g>
+                   <path class="sparks" fill="var(--color-red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button button-main">
+                <span class="button__text"> Like </span>
+              </button>
             </div>
           </section>
         </li>
       </ul>
-      <button class="button__save"> <img src="./svg/floppy.svg" width="21px" height="21px">
-        Сохранить на память</button>
+      <button type="button " 
+      onclick="window['dialog-id'].showModal()" 
+      aria-controls="dialog-id" class="button__save button-main">
+        <svg  viewBox="0 0 21 21" class="button__floppy">
+          <use href="./svg/floppy.svg#floppy">
+        </svg>
+        <span class="button__text"> Сохранить на память</span>
+      </button>
     </main>
+    <dialog class="dialog" id="dialog-id">
+      <svg class="dialog__floppy" viewBox="0 0 21 21">
+        <use href="./svg/floppy.svg#floppy">
+      </svg>
+      <span class="dialog__text">Вставьте <br>
+        дискету, чтобы <br> продолжить</span>
+      <button type="button "  class="ok button-main" 
+      onclick="window['dialog-id'].close();"><span class="button__text">ОК</span></button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
+
