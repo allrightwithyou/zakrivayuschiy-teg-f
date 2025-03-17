@@ -27,10 +27,10 @@
 
 .header{
   display: flex;
-  gap:20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap:20px;
   width: var(--main-width);
   height: var(--header-height);
   margin-top:100px;
@@ -45,8 +45,8 @@
 }
 
 .header__post-title{
-  text-transform: uppercase;
   font-size:var(--header__post-title-font-size);
+  text-transform: uppercase;
 }
 
 .main{
@@ -54,10 +54,10 @@
 }
 
 .image{
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-sizing: border-box;
 }
 
 .main__content{
@@ -79,11 +79,11 @@
 }
 
 .main__content-text{
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap:27px;
   margin-bottom: 25px;
+  font-size: 18px;
 }
 
 
@@ -112,10 +112,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
   width: 130px;
   height: 38px;
   border: solid 2px var(--color-acent);
+  font-size: 14px;
 }
 
 .buttons{
@@ -129,10 +129,10 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 1/1;
-  overflow: hidden;
   border-top: 2px solid var(--color-acent);
   border-bottom:2px solid var(--color-acent);
+  overflow: hidden;
+  aspect-ratio: 1/1;
 }
 
 .label{
