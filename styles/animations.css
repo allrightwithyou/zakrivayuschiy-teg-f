@@ -9,3 +9,120 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes heart-anim {
+  from{
+    transform:scale(1.25);
+    transform-origin: center center;
+  }
+  to{
+    transform:scale(1);
+    transform-origin: center center;
+  }
+}
+
+@keyframes sparks-anim {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.button-main::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-acent);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.button-main:hover::before{
+  transform: translateX(0);
+}
+
+.button-main:focus-visible{
+  box-shadow: 2px 2px 0 0 var(--color-acent);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card__icon-button:focus-visible{
+  border:2px solid #000;
+  transition: border 0.3s ease;
+}
+
+.sparks{
+  opacity: 0;
+}
+
+.core{
+  fill:var(--color-white);
+}
+
+.main-body{
+  fill:var(--color-white);
+}
+
+.card__icon-button:hover .core{
+  fill:var(--color-acent);
+  transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .main-body{
+  fill:var(--color-acent);
+  transition: fill 0.3s 0.05s ease;
+}
+
+.card__icon-button:not(:hover) .core{
+  transition: fill 0.3s 0.03s ease; 
+}
+
+.card__icon-button:not(:hover) .main-body{
+  transition: fill 0.3s ease; 
+}
+
+.card__icon-button:active .core{
+  fill:var(--color-red);
+  transition: fill 0.3s ease;
+}
+.card__icon-button:active .main-body{
+  fill:var(--color-red);
+  transition: fill 0.3s 0.05s ease;
+}
+
+.card__icon-button:not(:active) .core{
+  transition: fill 0.3s 0.03s ease; 
+}
+
+.card__icon-button:not(:active) .main-body{
+  transition: fill 0.3s ease; 
+}
+
+.like-icon.is-liked .heart{
+  animation: heart-anim 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks{
+  animation: sparks-anim 0.3s 0.3s ease-in;
+}
+
+.like-icon.is-liked .contour{
+  fill:var(--color-red);
+}
+
+.like-icon.is-liked .core{
+  fill:var(--color-red);
+}
+
+.like-icon.is-liked .main-body{
+  fill:var(--color-red);
+}
+
+.like-icon .contour{
+  fill:var(--color-acent);
+  transition: fill 0.1s linear;
+}
