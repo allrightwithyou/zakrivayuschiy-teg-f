@@ -7,10 +7,10 @@
 --color-gray:#d3d3d3;
 --color-transparent:transparent;
 --main-width:clamp(375px, 48.3%, 700px);
---header-height:368px;
---header__title-font-size:clamp(49px, calc(49px + (65 - 49) * ((100vw - 375px) / (1440 - 375))), 65px);
---header__post-title-font-size:clamp(14px, calc(14px + (23 - 14) * ((100vw - 375px) / (1440 - 375))), 23px);
+--header-title-font-size:clamp(49px, calc(49px + (65 - 49) * ((100vw - 375px) / (1440 - 375))), 65px);
+--header-post-title-font-size:clamp(14px, calc(14px + (23 - 14) * ((100vw - 375px) / (1440 - 375))), 23px);
 --main-title-weight:700;
+--header-padding:128px 0;
 --main-font-size:18px;
 --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
 repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -18,13 +18,12 @@ linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 --color-red:#ff0000;
 --color-acent:#000;
 --color-white:#fff;
-
 }
 
 
 @media (width < 376px){
   :root{
-    --header-height:327px;
+    --header-padding:120px 0;
     --main-width:100vw;
   }
 }

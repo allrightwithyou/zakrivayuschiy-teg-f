@@ -47,12 +47,12 @@
 
 .button-main:focus-visible{
   box-shadow: 2px 2px 0 0 var(--color-acent);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus-visible{
   border:2px solid #000;
-  transition: border 0.3s ease;
 }
 
 .sparks{
@@ -103,23 +103,13 @@
 }
 
 .like-icon.is-liked .heart{
+  fill:var(--color-red);
   animation: heart-anim 0.3s 0.1s ease-in;
 }
 
 .like-icon.is-liked .sparks{
+  fill:var(--color-red);
   animation: sparks-anim 0.3s 0.3s ease-in;
-}
-
-.like-icon.is-liked .contour{
-  fill:var(--color-red);
-}
-
-.like-icon.is-liked .core{
-  fill:var(--color-red);
-}
-
-.like-icon.is-liked .main-body{
-  fill:var(--color-red);
 }
 
 .like-icon .contour{
