@@ -47,8 +47,7 @@
 
 .button-main:focus-visible{
   box-shadow: 2px 2px 0 0 var(--color-acent);
-  transition: box-shadow 0.3s ease;
-  transition: border 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus-visible{
@@ -103,7 +102,6 @@
 }
 
 .like-icon.is-liked .heart{
-  fill:var(--color-red);
   animation: heart-anim 0.3s 0.1s ease-in;
 }
 
@@ -115,4 +113,16 @@
 .like-icon .contour{
   fill:var(--color-acent);
   transition: fill 0.1s linear;
+}
+.like-icon.is-liked .contour{
+  fill:var(--color-red);
+  transition:0.3s 0.06s linear ;
+}
+.like-icon.is-liked .core{
+  fill:var(--color-red);
+  transition: 0.3s linear;
+}
+.like-icon.is-liked .main-body{
+  fill:var(--color-red);
+  transition: 0.3s 0.05s linear;
 }
