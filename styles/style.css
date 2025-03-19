@@ -286,4 +286,7 @@
     width: 341px;
     overflow: hidden;
   }
+  .main__content-text{
+    max-width: 317px;
+  }
 }
