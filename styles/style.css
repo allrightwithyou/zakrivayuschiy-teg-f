@@ -284,8 +284,10 @@
   }
   .dialog[open]{
     width: 341px;
+    max-height:191px;
     overflow: hidden;
   }
+
   .main__content-text{
     max-width: 317px;
   }
