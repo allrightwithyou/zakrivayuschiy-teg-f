@@ -83,10 +83,10 @@
   display: flex;
   flex-direction: column;
   gap:27px;
+  max-width: 646px;
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 21px;
-  max-width: 646px;
 }
 
 
@@ -99,8 +99,8 @@
   border: 2px solid transparent;
   padding: 0;
   overflow: visible;
-  cursor: pointer;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .button-main{
@@ -194,8 +194,8 @@
   grid-template-columns: min-content 1fr;
   justify-content: center;
   align-items: center;
-  column-gap:20px;
   row-gap: 30px;
+  column-gap:20px;
   width: 357px;
   border: 2px solid var(--color-acent);
   padding: 30px;
@@ -218,6 +218,7 @@
   grid-column: span 2;
   height: 38px;
   font-size:14px;
+  line-height: 90%;
   text-transform:uppercase;
 }
 :focus{
@@ -278,8 +279,8 @@
     height: 28px;
   }
   .label{
-    right:13px;
     top:25px;
+    right:13px;
   }
   .dialog[open]{
     width: 341px;
