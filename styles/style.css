@@ -191,7 +191,8 @@
   position: fixed;
   inset: 0;
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns:fit-content 1fr;
+  grid-template-rows: auto min-content;
   justify-content: center;
   align-items: center;
   row-gap: 30px;
@@ -271,9 +272,7 @@
     width: 306px;
     height: 84px;
   }
-  .dialog[open]{
-    width: 341px;
-  }
+
   .button__floppy{
     width: 28px;
     height: 28px;
@@ -283,10 +282,15 @@
     right:13px;
   }
   .dialog[open]{
+    padding: 30px 38px;
     width: 341px;
-    overflow: hidden;
   }
-
+  .ok{
+    width: 257px;
+  }
+  .dialog__text{
+    width: 198px;
+  }
   .main__content-text{
     max-width: 317px;
   }
