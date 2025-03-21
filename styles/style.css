@@ -210,12 +210,13 @@
 }
 
 .dialog__text{
-  width: 234px;
+  max-width: 234px;
   font-size:14px;
   line-height: 150%;
 }
 
 .ok{
+  width: 100%;
   grid-column: span 2;
   height: 38px;
   font-size:14px;
@@ -285,11 +286,9 @@
     padding: 30px 38px;
     width: 341px;
   }
-  .ok{
-    width: 257px;
-  }
+  
   .dialog__text{
-    width: 198px;
+    max-width: 198px;
   }
   .main__content-text{
     max-width: 317px;
